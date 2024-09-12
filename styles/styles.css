@@ -1,0 +1,530 @@
+/* @font-face {
+  font-family: 'PlayPretend';
+  src: url("/styles/PlayPretend.otf") format("opentype");
+} */
+
+*{
+  /* font-family: 'PlayPretend', sans-serif; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.logo{
+  height: 50px;
+  width: 100px;
+}
+
+.hero-info button{
+  font-family: 'PlayPretend', sans-serif;
+  text-align: center;
+  height: 50px;
+  font-weight: 500;
+  font-size: large;
+  width: 150px;
+  color: rgb(240, 143, 32);
+  margin: 10px;
+}
+
+.hero-info button:hover {
+  color: #29c2ff; /* Change hover color */
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/image00003.jpeg");
+
+  /* Set a specific height */
+  height: 100vh;
+  width: 100vw;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  background-color: #f5f5f5; /* Light gray background */
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Stretch across the full width */
+  z-index: 10; /* Ensure navbar stays on top of content */
+  font-family: 'PlayPretend', sans-serif;
+  box-shadow: 10px 10px 20px black;
+}
+
+.logo {
+  flex: 0 0 auto; /* Allow logo to shrink if needed */
+}
+
+.logo a {
+  font-weight: bold;
+  color: black; /* Or your brand color */
+  text-decoration: none;
+  font-family: 'PlayPretend', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0px 50px 0px 0px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* Or your brand color */
+  font-weight: 500;
+  font-size: x-large;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #29c2ff;  /* Change hover color */
+}
+
+.menu-toggle {
+  display: none; /* Hide menu toggle on large screens */
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+  color: black; /* Or your brand color */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide navigation links on small screens */
+  }
+  .menu-toggle {
+    display: block; /* Show menu toggle on small screens */
+  }
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section{
+  width: 100%;
+}
+
+.hero-content-1{
+  display: flex;
+  flex-direction: row;
+  margin-top: -450px;
+}
+
+#head-text { 
+  text-align: center;
+  font-size: 50px;
+}
+
+#head-social{
+  text-align: center;
+  font-size: 50px;
+}
+
+#head-client{
+  text-align: center;
+  font-size: 50px;
+}
+
+#head-contact{
+  text-align: center;
+  font-size: 50px;
+}
+
+#head-abt{
+  text-align: center;
+  font-size: 50px;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-info-holder-1{
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.main-info-cont-1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 50vw;
+  border-radius: 30px;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-us p{
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.main-info-cont-3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cont-3-sec-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+.cont-4-sec-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.insta-cont{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+#post-holder{
+  margin-right: 50px;
+}
+
+#vpracing-img{
+  height: 300px;
+  width: 350px;
+}
+
+.main-info-cont-2{
+  margin-bottom: 20px;
+  width: 50vw;
+}
+
+.main-info-cont-1 h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+.btn-holders-mic1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.main-info-cont-2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.tuned-circ{
+  text-align: center;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.tuned-circ img:hover{
+  box-shadow: #29c2ff;
+}
+
+.fuel-circ img:hover{
+  box-shadow: #ff9029;
+}
+
+.fuel-circ{
+  text-align: center;
+  margin-left: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.tuned-circ img{
+  height: 200px;
+  width: 400px;
+}
+
+.fuel-circ img{
+  height: 200px;
+  width: 400px;
+}
+
+.tuned-circ:hover{
+  box-shadow: 0 8px 16px 0 #29c2ff;
+}
+
+.fuel-circ:hover{
+  box-shadow: 0 8px 16px 0 #ff9029;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.testimonial h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.nav-button:hover {
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial {
+        flex: 0 0 calc(33.333% - 20px);
+        transform: scale(0.8);
+        opacity: 0.7;
+        transition: all 0.5s ease;
+    }
+
+    .testimonial.active {
+        transform: scale(1.1);
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.Footer{
+  background-color: #747474;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#myLogo{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.serv-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#serv-icons{
+  height: 50px;
+  width: 50px;
+}
+
+#r-arrow{
+  height: 50px;
+  width: 50px;
+}
+
+#l-arrow{
+  transform: scalex(-1);
+  height: 50px;
+  width: 50px;
+}
+
+#call-us-btn{
+  height: 72px;
+  width: 320px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #29c2ff;
+  font-weight: 500;
+  font-size: medium;
+}
+
+#call-us-btn img {
+  margin-right: 40px; /* Adjust the value as needed */
+}
+
+/* Slideshow container */
+.abt-caro {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
