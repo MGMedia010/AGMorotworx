@@ -1,6 +1,6 @@
 const carousel = document.querySelector('.carousel');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.cust-prev');
+const nextBtn = document.querySelector('.cust-next');
 
 const testimonials = [
     {
